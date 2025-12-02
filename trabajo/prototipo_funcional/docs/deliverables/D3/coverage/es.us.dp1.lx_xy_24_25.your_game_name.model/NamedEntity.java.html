@@ -18,6 +18,7 @@ package es.us.dp1.lx_xy_24_25.your_game_name.model;
 import jakarta.persistence.Column;
 import jakarta.persistence.MappedSuperclass;
 import jakarta.validation.constraints.Size;
+import lombok.EqualsAndHashCode;
 
 /**
  * Simple JavaBean domain object adds a name property to &lt;code&gt;BaseEntity&lt;/code&gt;. Used as
@@ -27,23 +28,23 @@ import jakarta.validation.constraints.Size;
  * @author Juergen Hoeller
  */
 @MappedSuperclass
-<span class="nc" id="L30">public class NamedEntity extends BaseEntity {</span>
+<span class="nc" id="L31">public class NamedEntity extends BaseEntity {</span>
 
     @Size(min = 3, max = 50)
 	@Column(name = &quot;name&quot;)
 	private String name;
 
 	public String getName() {
-<span class="nc" id="L37">		return this.name;</span>
+<span class="nc" id="L38">		return this.name;</span>
 	}
 
 	public void setName(String name) {
-<span class="nc" id="L41">		this.name = name;</span>
-<span class="nc" id="L42">	}</span>
+<span class="nc" id="L42">		this.name = name;</span>
+<span class="nc" id="L43">	}</span>
 
 	@Override
 	public String toString() {
-<span class="nc" id="L46">		return this.getName();</span>
+<span class="nc" id="L47">		return this.getName();</span>
 	}
 
 }

@@ -18,14 +18,16 @@ package es.us.dp1.lx_xy_24_25.your_game_name.model;
 import jakarta.persistence.Column;
 import jakarta.persistence.MappedSuperclass;
 import jakarta.validation.constraints.NotEmpty;
+import lombok.EqualsAndHashCode;
 
 /**
  * Simple JavaBean domain object representing an person.
  *
  * @author Ken Krebs
  */
-@MappedSuperclass
-<span class="fc" id="L28">public class Person extends BaseEntity {</span>
+
+ @MappedSuperclass	
+<span class="fc" id="L30">public class Person extends BaseEntity {</span>
 
 	@Column(name = &quot;first_name&quot;)
 	@NotEmpty
@@ -36,20 +38,20 @@ import jakarta.validation.constraints.NotEmpty;
 	protected String lastName;
 
 	public String getFirstName() {
-<span class="nc" id="L39">		return this.firstName;</span>
+<span class="nc" id="L41">		return this.firstName;</span>
 	}
 
 	public void setFirstName(String firstName) {
-<span class="fc" id="L43">		this.firstName = firstName;</span>
-<span class="fc" id="L44">	}</span>
+<span class="fc" id="L45">		this.firstName = firstName;</span>
+<span class="fc" id="L46">	}</span>
 
 	public String getLastName() {
-<span class="nc" id="L47">		return this.lastName;</span>
+<span class="nc" id="L49">		return this.lastName;</span>
 	}
 
 	public void setLastName(String lastName) {
-<span class="fc" id="L51">		this.lastName = lastName;</span>
-<span class="fc" id="L52">	}</span>
+<span class="fc" id="L53">		this.lastName = lastName;</span>
+<span class="fc" id="L54">	}</span>
 
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.13.202504020838</span></div></body></html>
