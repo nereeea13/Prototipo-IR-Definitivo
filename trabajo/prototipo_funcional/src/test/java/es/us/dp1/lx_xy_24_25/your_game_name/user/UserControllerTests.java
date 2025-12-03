@@ -22,7 +22,7 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.FilterType;
 import org.springframework.http.MediaType;
-import es.us.dp1.lx_xy_24_25.your_game_name.exceptions.AccessDeniedException;
+import a.e.i.o.dia.exceptions.AccessDeniedException;
 import org.springframework.security.config.annotation.web.WebSecurityConfigurer;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -32,8 +32,13 @@ import org.springframework.test.web.servlet.MockMvc;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import es.us.dp1.lx_xy_24_25.your_game_name.configuration.SecurityConfiguration;
-import es.us.dp1.lx_xy_24_25.your_game_name.exceptions.ResourceNotFoundException;
+import a.e.i.o.dia.configuration.SecurityConfiguration;
+import a.e.i.o.dia.exceptions.ResourceNotFoundException;
+import a.e.i.o.dia.user.UserService;
+import a.e.i.o.dia.user.Authorities;
+import a.e.i.o.dia.user.AuthoritiesService;
+import a.e.i.o.dia.user.User;
+import a.e.i.o.dia.user.UserRestController;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Owner;

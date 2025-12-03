@@ -4,8 +4,8 @@ import java.time.Duration;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
-import SupermercadoDia.web.enumerados.EstadoTurno;
-import SupermercadoDia.web.enumerados.TipoTurno;
+import a.e.i.o.dia.enumerados.EstadoTurno;
+import a.e.i.o.dia.enumerados.TipoTurno;
 
 public class Turno {
 

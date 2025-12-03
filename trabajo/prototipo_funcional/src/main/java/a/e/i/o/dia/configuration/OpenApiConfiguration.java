@@ -1,4 +1,4 @@
-package es.us.dp1.lx_xy_24_25.your_game_name.configuration;
+package a.e.i.o.dia.configuration;
 import org.springframework.context.annotation.Configuration;
 
 import io.swagger.v3.oas.annotations.OpenAPIDefinition;

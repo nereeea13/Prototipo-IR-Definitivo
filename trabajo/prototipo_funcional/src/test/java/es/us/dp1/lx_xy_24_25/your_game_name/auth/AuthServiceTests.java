@@ -9,10 +9,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.transaction.annotation.Transactional;
 
-import es.us.dp1.lx_xy_24_25.your_game_name.auth.payload.request.SignupRequest;
-import es.us.dp1.lx_xy_24_25.your_game_name.user.AuthoritiesService;
-import es.us.dp1.lx_xy_24_25.your_game_name.user.User;
-import es.us.dp1.lx_xy_24_25.your_game_name.user.UserService;
+import a.e.i.o.dia.auth.AuthService;
+import a.e.i.o.dia.auth.payload.request.SignupRequest;
+import a.e.i.o.dia.user.AuthoritiesService;
+import a.e.i.o.dia.user.User;
+import a.e.i.o.dia.user.UserService;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Owner;

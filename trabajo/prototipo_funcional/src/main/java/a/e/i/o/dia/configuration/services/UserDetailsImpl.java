@@ -1,4 +1,4 @@
-package es.us.dp1.lx_xy_24_25.your_game_name.configuration.services;
+package a.e.i.o.dia.configuration.services;
 
 import java.util.Collection;
 import java.util.List;
@@ -9,8 +9,7 @@ import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-
-import es.us.dp1.lx_xy_24_25.your_game_name.user.User;
+import a.e.i.o.dia.user.User;
 
 public class UserDetailsImpl implements UserDetails {
 

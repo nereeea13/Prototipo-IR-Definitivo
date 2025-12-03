@@ -1,4 +1,4 @@
-package es.us.dp1.lx_xy_24_25.your_game_name.auth;
+package a.e.i.o.dia.auth;
 
 import java.util.ArrayList;
 
@@ -6,14 +6,16 @@ import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import es.us.dp1.lx_xy_24_25.your_game_name.user.Authorities;
+
+import a.e.i.o.dia.user.Authorities;
+import a.e.i.o.dia.user.AuthoritiesService;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import es.us.dp1.lx_xy_24_25.your_game_name.auth.payload.request.SignupRequest;
-import es.us.dp1.lx_xy_24_25.your_game_name.user.AuthoritiesService;
-import es.us.dp1.lx_xy_24_25.your_game_name.user.User;
-import es.us.dp1.lx_xy_24_25.your_game_name.user.UserService;
+import a.e.i.o.dia.auth.payload.request.SignupRequest;
+import a.e.i.o.dia.user.AuthoritiesService;
+import a.e.i.o.dia.user.User;
+import a.e.i.o.dia.user.UserService;
 
 @Service
 public class AuthService {

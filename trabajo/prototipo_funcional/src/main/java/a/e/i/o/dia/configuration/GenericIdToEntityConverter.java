@@ -1,4 +1,4 @@
-package es.us.dp1.lx_xy_24_25.your_game_name.configuration;
+package a.e.i.o.dia.configuration;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -12,7 +12,7 @@ import org.springframework.core.convert.ConversionService;
 import org.springframework.core.convert.TypeDescriptor;
 import org.springframework.core.convert.converter.ConditionalGenericConverter;
 import org.springframework.core.convert.support.DefaultConversionService;
-import es.us.dp1.lx_xy_24_25.your_game_name.model.BaseEntity;
+import a.e.i.o.dia.model.BaseEntity;
 import org.springframework.stereotype.Component;
 
 @Component

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package es.us.dp1.lx_xy_24_25.your_game_name.model;
+package a.e.i.o.dia.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 

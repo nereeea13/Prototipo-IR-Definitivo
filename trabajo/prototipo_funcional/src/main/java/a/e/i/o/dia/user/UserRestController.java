@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package es.us.dp1.lx_xy_24_25.your_game_name.user;
+package a.e.i.o.dia.user;
 
 import java.util.List;
 
@@ -23,8 +23,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
-import es.us.dp1.lx_xy_24_25.your_game_name.exceptions.AccessDeniedException;
-import es.us.dp1.lx_xy_24_25.your_game_name.util.RestPreconditions;
+import org.springframework.security.access.AccessDeniedException;
+import a.e.i.o.dia.util.RestPreconditions;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -36,13 +36,13 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import es.us.dp1.lx_xy_24_25.your_game_name.auth.payload.response.MessageResponse;
+import a.e.i.o.dia.auth.payload.response.MessageResponse;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 
 @RestController
 @RequestMapping("/api/v1/users")
 @SecurityRequirement(name = "bearerAuth")
-class UserRestController {
+public class UserRestController {
 
 	private final UserService userService;
 	private final AuthoritiesService authService;

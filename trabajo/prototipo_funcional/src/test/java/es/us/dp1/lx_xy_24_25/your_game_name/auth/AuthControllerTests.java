@@ -21,9 +21,9 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.FilterType;
 import org.springframework.http.MediaType;
-import es.us.dp1.lx_xy_24_25.your_game_name.auth.payload.request.LoginRequest;
-import es.us.dp1.lx_xy_24_25.your_game_name.configuration.jwt.JwtUtils;
-import es.us.dp1.lx_xy_24_25.your_game_name.configuration.services.UserDetailsImpl;
+import a.e.i.o.dia.auth.payload.request.LoginRequest;
+import a.e.i.o.dia.configuration.jwt.JwtUtils;
+import a.e.i.o.dia.configuration.services.*;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.config.annotation.web.WebSecurityConfigurer;
@@ -33,8 +33,10 @@ import org.springframework.test.web.servlet.MockMvc;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import es.us.dp1.lx_xy_24_25.your_game_name.auth.payload.request.SignupRequest;
-import es.us.dp1.lx_xy_24_25.your_game_name.user.UserService;
+import a.e.i.o.dia.auth.AuthController;
+import a.e.i.o.dia.auth.AuthService;
+import a.e.i.o.dia.auth.payload.request.*;
+import a.e.i.o.dia.user.*;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Owner;

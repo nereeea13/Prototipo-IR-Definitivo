@@ -14,12 +14,13 @@
  * limitations under the License.
  */
 
-package es.us.dp1.lx_xy_24_25.your_game_name.util;
+package a.e.i.o.dia.util;
 
 import java.util.Collection;
 
 import org.springframework.orm.ObjectRetrievalFailureException;
-import es.us.dp1.lx_xy_24_25.your_game_name.model.BaseEntity;
+
+import a.e.i.o.dia.model.BaseEntity;
 
 /**
  * Utility methods for handling entities. Separate from the BaseEntity class mainly

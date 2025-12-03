@@ -2,8 +2,8 @@ package a.e.i.o.dia.pedidos;
 
 import java.time.LocalDate;
 
-import a.e.i.o.dia.model.Person;
 import a.e.i.o.dia.model.BaseEntity;
+import a.e.i.o.dia.model.Person;
 
 
 public class Proveedor extends Person {

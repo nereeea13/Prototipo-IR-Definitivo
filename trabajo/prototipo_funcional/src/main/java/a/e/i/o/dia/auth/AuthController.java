@@ -1,4 +1,4 @@
-package es.us.dp1.lx_xy_24_25.your_game_name.auth;
+package a.e.i.o.dia.auth;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -7,12 +7,12 @@ import jakarta.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import es.us.dp1.lx_xy_24_25.your_game_name.auth.payload.response.JwtResponse;
+import a.e.i.o.dia.auth.payload.response.JwtResponse;
 
-import es.us.dp1.lx_xy_24_25.your_game_name.configuration.jwt.JwtUtils;
-import es.us.dp1.lx_xy_24_25.your_game_name.user.UserService;
+import a.e.i.o.dia.configuration.jwt.JwtUtils;
+import a.e.i.o.dia.user.UserService;
 
-import es.us.dp1.lx_xy_24_25.your_game_name.configuration.services.UserDetailsImpl;
+import a.e.i.o.dia.configuration.services.UserDetailsImpl;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
@@ -24,9 +24,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import es.us.dp1.lx_xy_24_25.your_game_name.auth.payload.request.LoginRequest;
-import es.us.dp1.lx_xy_24_25.your_game_name.auth.payload.request.SignupRequest;
-import es.us.dp1.lx_xy_24_25.your_game_name.auth.payload.response.MessageResponse;
+import a.e.i.o.dia.auth.payload.request.LoginRequest;
+import a.e.i.o.dia.auth.payload.request.SignupRequest;
+import a.e.i.o.dia.auth.payload.response.MessageResponse;
 import io.swagger.v3.oas.annotations.tags.Tag;
 
 import org.springframework.security.authentication.BadCredentialsException;

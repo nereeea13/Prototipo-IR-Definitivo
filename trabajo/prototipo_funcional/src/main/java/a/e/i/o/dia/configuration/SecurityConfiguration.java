@@ -1,4 +1,4 @@
-package es.us.dp1.lx_xy_24_25.your_game_name.configuration;
+package a.e.i.o.dia.configuration;
 
 import static org.springframework.security.config.Customizer.withDefaults;
 /*
@@ -26,9 +26,9 @@ import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
-import es.us.dp1.lx_xy_24_25.your_game_name.configuration.jwt.AuthEntryPointJwt;
-import es.us.dp1.lx_xy_24_25.your_game_name.configuration.jwt.AuthTokenFilter;
-import es.us.dp1.lx_xy_24_25.your_game_name.configuration.services.UserDetailsServiceImpl;
+import a.e.i.o.dia.configuration.jwt.AuthEntryPointJwt;
+import a.e.i.o.dia.configuration.jwt.AuthTokenFilter;
+import a.e.i.o.dia.configuration.services.UserDetailsServiceImpl;
 
 @Configuration
 @EnableWebSecurity

@@ -1,4 +1,4 @@
-package es.us.dp1.lx_xy_24_25.your_game_name.developers;
+package a.e.i.o.dia.developers;
 
 import java.io.FileReader;
 import java.io.IOException;
@@ -8,7 +8,7 @@ import org.apache.maven.model.Developer;
 import org.apache.maven.model.Model;
 import org.apache.maven.model.io.xpp3.MavenXpp3Reader;
 import org.codehaus.plexus.util.xml.pull.XmlPullParserException;
-import es.us.dp1.lx_xy_24_25.your_game_name.model.Person;
+import a.e.i.o.dia.model.Person;
 
 
 public class DevelopersController {

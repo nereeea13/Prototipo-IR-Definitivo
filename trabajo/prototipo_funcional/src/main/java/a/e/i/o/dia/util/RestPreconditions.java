@@ -1,6 +1,6 @@
-package es.us.dp1.lx_xy_24_25.your_game_name.util;
+package a.e.i.o.dia.util;
 
-import es.us.dp1.lx_xy_24_25.your_game_name.exceptions.ResourceNotFoundException;
+import a.e.i.o.dia.exceptions.ResourceNotFoundException;
 
 public final class RestPreconditions {
 	

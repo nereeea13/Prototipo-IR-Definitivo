@@ -5,7 +5,7 @@ import java.util.Arrays;
 import org.springframework.boot.test.context.TestConfiguration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Primary;
-import es.us.dp1.lx_xy_24_25.your_game_name.configuration.services.UserDetailsImpl;
+import a.e.i.o.dia.configuration.services.UserDetailsImpl;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Owner;
