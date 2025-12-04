@@ -13,6 +13,8 @@ import tokenService from "./services/token.service";
 import UserListAdmin from "./admin/users/UserListAdmin";
 import UserEditAdmin from "./admin/users/UserEditAdmin";
 import SwaggerDocs from "./public/swagger";
+import HomeJefe from "./home/homeJefe";
+import HomeEmpleado from "./home/homeEmpleado";
 
 function ErrorFallback({ error, resetErrorBoundary }) {
   return (
@@ -35,6 +37,9 @@ function App() {
     return jwt_decode(jwt).authorities;
   }
 
+  const isJefe = roles.includes("JEFE");
+  const isEmpleado = roles.includes("EMPLEADO");
+
   let adminRoutes = <></>;
   let ownerRoutes = <></>;
   let userRoutes = <></>;
@@ -42,14 +47,14 @@ function App() {
   let publicRoutes = <></>;
 
   roles.forEach((role) => {
-    if (role === "ADMIN") {
+    if (role === "JEFE") {
       adminRoutes = (
         <>
           <Route path="/users" exact={true} element={<PrivateRoute><UserListAdmin /></PrivateRoute>} />
           <Route path="/users/:username" exact={true} element={<PrivateRoute><UserEditAdmin /></PrivateRoute>} />          
         </>)
     }
-    if (role === "PLAYER") {
+    if (role === "EMPLEADO") {
       ownerRoutes = (
         <>
           
@@ -78,14 +83,39 @@ function App() {
       <ErrorBoundary FallbackComponent={ErrorFallback} >
         <AppNavbar />
         <Routes>
-          <Route path="/" exact={true} element={<Home />} />
-          <Route path="/plans" element={<PlanList />} />
-          <Route path="/docs" element={<SwaggerDocs />} />
+
+          {/* Página de inicio dinámica por rol */}
+          {isJefe && (
+            <Route
+              path="/"
+              element={
+                <PrivateRoute>
+                  <HomeJefe />
+                </PrivateRoute>
+              }
+            />
+          )}
+
+          {isEmpleado && !isJefe && (
+            <Route
+              path="/"
+              element={
+                <PrivateRoute>
+                  <HomeEmpleado />
+                </PrivateRoute>
+              }
+            />
+          )}
+
+          {/* Si no tiene rol → inicio normal público */}
+          {!isJefe && !isEmpleado && (
+            <Route path="/" element={<Home />} />
+          )}
+
           {publicRoutes}
           {userRoutes}
           {adminRoutes}
           {ownerRoutes}
-          {vetRoutes}
         </Routes>
       </ErrorBoundary>
     </div>

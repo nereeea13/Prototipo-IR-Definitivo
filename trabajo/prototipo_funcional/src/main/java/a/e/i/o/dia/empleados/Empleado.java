@@ -4,6 +4,8 @@ import java.util.List;
 
 import a.e.i.o.dia.enumerados.RolEmpleado;
 import a.e.i.o.dia.model.Person;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import jakarta.persistence.OneToMany;
 import lombok.Getter;
 import lombok.Setter;
@@ -12,6 +14,7 @@ import lombok.Setter;
 @Setter
 public class Empleado extends Person{
 
+    @Enumerated(EnumType.STRING)
     private RolEmpleado rol;
     private Integer dni; 
     private Integer telefono; 
